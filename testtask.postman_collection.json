@@ -1,0 +1,145 @@
+{
+	"info": {
+		"_postman_id": "9210253b-3608-4cc7-9b07-d436516667af",
+		"name": "testtask",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "14037360"
+	},
+	"item": [
+		{
+			"name": "getTop10movies",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/longest-duration-movies",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"longest-duration-movies"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get top rated movies",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/top-rated-movies",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"top-rated-movies"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "genere movies with subtotals",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/genre-movies-with-subtotals",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"genre-movies-with-subtotals"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update-runtime-minutes",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/update-runtime-minutes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"update-runtime-minutes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get All movies",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/allMoviesDetails",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"allMoviesDetails"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create Movie",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"tconst\": \"tt0000102\",\r\n        \"titletype\": \"movie\",\r\n        \"primarytitle\": \"Batman2\",\r\n        \"runtimeminutes\": 180,\r\n        \"genres\": \"Action\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/new-movie",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"new-movie"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
